@@ -1,0 +1,147 @@
+html, body {
+  min-height: 95vh;
+}
+
+body {
+  background-color: #283149;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+.content {
+  width: 80%;
+  transition: filter 0.5s;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: #DFF7F8;
+  margin: 1rem auto 3rem;
+  max-width: 90%;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.headingAnim {
+  transform: scale(0.98);
+}
+
+h1:hover {
+  color: #95FFE7;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.container>div {
+  box-shadow: 0 0 5px 2px white;
+  box-sizing: border-box;
+  width: 30vw;
+  height: 30vw;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.anim {
+  filter: contrast(1.5);
+  filter: brightness(1.5);
+  transform: scale(0.97);
+}
+
+.t-l {
+  border: 5px solid #55AA55;
+  border-radius: 100% 0 0 0;
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: auto;
+}
+
+.t-r {
+  border: 5px solid #FF5555;
+  border-radius: 0 100% 0 0;
+  background-color: red;
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: auto;
+}
+
+.b-l {
+  border: 5px solid #FFFF55;
+  border-radius: 0 0 0 100%;
+  background-color: #FFDA00;
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: auto;
+}
+
+.b-r {
+  border: 5px solid #5555FF;
+  border-radius: 0 0 100% 0;
+  background-color: blue;
+  grid-column: 2;
+  grid-row: 2;
+  margin-right: auto;
+}
+
+.blur-element {
+  filter: blur(4px);
+}
+
+.message-container {
+  color: blue;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  font-family: 'Libre Baskerville', serif;
+  background-color: #B3B3FF;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 5vw;
+  padding: 2rem 2.5rem;
+}
+
+.footer {
+  margin-top: 4rem;
+}
+
+.footer p {
+  color: white;
+  text-shadow: 0 0 4px black;
+  text-align: center;
+}
+
+.footer-icons-div {
+  margin: 1rem 0;
+}
+
+.footer-icons-div a {
+  color: #9FA3AD;
+  font-size: 1rem;
+  margin: 0.65rem;
+}
